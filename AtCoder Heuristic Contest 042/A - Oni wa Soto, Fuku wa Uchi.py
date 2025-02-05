@@ -208,8 +208,7 @@ def evaluate_solution_with_y(board_original, moves):
 
 def perturb(moves, board_original):
     """
-    Nova função de perturbação que inclui:
-      - swap ou delete (já existentes)
+      - swap ou delete
       - inserir nova operação aleatória
       - fundir operações adjacentes idênticas
       - mover um bloco contíguo de operações para outra posição
@@ -307,7 +306,7 @@ def simulated_annealing(board_original, initial_moves, time_limit=2.0, max_iter=
     """
     SA com ajustes:
       - Parâmetros de tempo e iterações aumentados.
-      - Estratégia de resfriamento exponencial (ajustada).
+      - Estratégia de resfriamento exponencial.
       - Penaliza soluções que removam Fukus quando a corrente não remove.
     """
     start = time.time()
